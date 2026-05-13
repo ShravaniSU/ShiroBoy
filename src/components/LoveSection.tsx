@@ -1,14 +1,7 @@
-import { motion } from 'framer-motion'
-import { Heart, PawPrint } from 'lucide-react'
-import { getImagesByCategory, getFirstMatchingImage } from '../utils/images'
 import { AnimatedSection } from './AnimatedSection'
-import { GlassCard } from './GlassCard'
 import { SectionHeading } from './SectionHeading'
 
 export function LoveSection() {
-  const familyImages = getImagesByCategory('Family Moments')
-  const collage = familyImages.length ? familyImages.slice(0, 5) : [getFirstMatchingImage('happy')]
-
   return (
     <AnimatedSection className="px-5 py-24 md:px-10">
       <SectionHeading
